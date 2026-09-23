@@ -1,4 +1,4 @@
-from .errors import VaccineError, NotWearingMaskError
+from .errors import VaccineError
 from .cafe import Cafe
 
 
