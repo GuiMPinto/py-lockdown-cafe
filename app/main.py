@@ -14,6 +14,7 @@ def go_to_cafe(friends: list, cafe: Cafe) -> str:
         for friend in friends:
             cafe.visit_cafe(friend)
     except NotWearingMaskError:
-        masks_to_buy = sum(1 for f in friends if not f.get("wearing_a_mask", False))
+        masks_to_buy = sum(1 for f in friends if not f.get(
+                           "wearing_a_mask", False))
         return f"Friends should buy {masks_to_buy} masks"
     return f"Friends can go to {cafe.name}"
