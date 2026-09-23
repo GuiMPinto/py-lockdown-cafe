@@ -5,7 +5,7 @@ from errors import (OutdatedVaccineError, NotVaccinatedError,
 
 
 class Cafe:
-    def __init__(self, name: str) -> str:
+    def __init__(self, name: str) -> None:
         self.name = name
 
     def visit_cafe(self, visitor: dict) -> str:
