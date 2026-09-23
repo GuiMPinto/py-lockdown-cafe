@@ -11,6 +11,9 @@ def go_to_cafe(friends: list, cafe: Cafe) -> str:
         for friend in friends:
             cafe.visit_cafe(friend)
 
+    except NotVaccinatedError:
+        return "NotVaccinatedError"        
+
     except OutdatedVaccineError:
         return "All friends should be vaccinated"
 
